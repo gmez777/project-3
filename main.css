@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f2eae2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  width: 343px;
+  height: 611px;
+  border-radius: 10px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 5px;
+  color: #6c7289;
+}
+h1 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  /* or 100% */
+  color: #1c232b;
+  margin-top: 12px;
+}
+.text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  /* or 164% */
+  color: #6c7289;
+  margin-top: 16px;
+}
+.fasebi {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 19px;
+
+  margin-top: 24px;
+}
+.fasi1 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #3d8168;
+}
+.fasi2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  color: #6c7289;
+
+  text-decoration-line: line-through;
+}
+.card {
+  background: #3d8168;
+  display: flex;
+  width: 295px;
+  height: 48px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 12px;
+}
+.addcard {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+}
+.chanel {
+  border-radius: 10px 10px 0 0;
+}
+.container {
+  padding: 24px;
+}
+.desktopchanel{
+  display: none;
+}
+
+
+
+
+@media screen and (min-width:1440px){
+  *{box-sizing: unset;
+  }
+  .main{
+    width: unset;
+    height: unset;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .chanel{
+    display: none;
+  }
+  .desktopchanel{
+    display: block;
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+   
+  }
+  .container{
+    padding: 32px;
+    
+  }
+  body{
+    padding: 175px 420px;
+  }
+  h1{
+    width: 236px;
+    margin-top: 20px;
+    
+  }
+  .text{
+    width: 237px;
+    margin-top: 24px;
+  }
+  .fasebi{
+    margin-top: 29px;
+  }
+  .card{
+    margin-top: 30px;
+  }
+  .card:hover{
+    cursor: pointer;
+    background-color: #1A4032;
+
+  }
+}
